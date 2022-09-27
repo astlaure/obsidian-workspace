@@ -1,0 +1,50 @@
+/** GLOBAL **/
+body {
+  //background: #eee;
+}
+
+/** FORMS **/
+form {
+  label {
+    margin-bottom: 1rem;
+    display: block;
+    font-size: var(--font-size-sm);
+
+    input {
+      font-size: var(--font-size-md);
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+/** CONTAINER **/
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/** GRID **/
+.container .row {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  &.justify-center {
+    justify-content: center;
+  }
+
+  .column {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    &.size-6 {
+      width: calc(100% / 12 * 6);
+    }
+  }
+}
